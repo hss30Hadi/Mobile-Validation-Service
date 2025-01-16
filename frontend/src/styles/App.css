@@ -1,0 +1,164 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1,h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  margin-right: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+form button[type="submit"] {
+  background-color: #28a745; /* Green */
+}
+
+form button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+form button.cancel {
+  background-color: #6c757d; /* Gray */
+}
+
+form button.cancel:hover {
+  background-color: #5a6268;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  text-align: left;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+table th {
+  background-color: #f8f9fa;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Button Styles */
+button.update-btn {
+  background-color: #007bff; /* Blue */
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.update-btn:hover {
+  background-color: #0056b3;
+}
+
+button.delete-btn {
+  background-color: #dc3545; /* Red */
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.delete-btn:hover {
+  background-color: #c82333;
+}
+
+
+/* Mobile Validation Container */
+.mobile-validation-container {
+  max-width: 400px; 
+  margin: 20px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.mobile-validation-container h2 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Input Styles */
+.mobile-validation-container input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Validate Button */
+.mobile-validation-container button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #28a745; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.mobile-validation-container button:hover {
+  background-color: #218838; 
+}
+
+/* Validation Result */
+.validation-result {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+}
+
+.validation-result.error {
+  color: #dc3545; 
+}
+
+
+
