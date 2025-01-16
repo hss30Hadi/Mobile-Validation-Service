@@ -1,0 +1,18 @@
+Test 1: Validate Mobile Number (/validate)
+
+Positive Test: Send a valid mobile number and verify the response includes country code, country name, and carrier.
+Negative Test: Send an empty or invalid mobile number and verify the API returns an appropriate error.
+
+Test 2: Add New Item (/api/add)
+
+Positive Test: Submit a valid payload (name, description, mobileNumber) and ensure the response confirms successful addition.
+Negative Test: Submit incomplete payloads (missing name or description) and verify the API returns an error.
+
+Test 3: Fetch All Items (/api/items)
+
+Test: Send a request to fetch all items and ensure the response includes a list of items with the correct structure.
+
+Test 4: Delete an Item (/api/delete/:id)
+
+Positive Test: Send a request to delete an item by a valid ID and verify the response confirms deletion.
+Negative Test: Send a request with an invalid or nonexistent ID and verify the API returns an error.

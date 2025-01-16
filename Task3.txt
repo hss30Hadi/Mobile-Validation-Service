@@ -1,0 +1,53 @@
+Project Documentation: Mobile Validation and Item Management Service
+
+Overview  
+This project combines mobile validation and item management functionalities into a single application using Node.js and React. It provides APIs for adding, updating, deleting, and listing items and validating mobile numbers via an external API(NumVerify).
+
+Technologies Used
+- Node.js (For backend)
+- React (For frontend)
+- MongoDB (database)
+
+Project Structure
+- server.js: Node.js server with API endpoints.
+- App.js: integrates the MobileValidation and ItemManagement components.
+- App.css: CSS file containing styles for the React components(MobileValidation.js, ItemManagement.js)
+- MobileValidation.js: React component for validating mobile numbers.
+- ItemManagement.js: React component for managing items.
+
+API Documentation
+
+1. Validate Mobile Number `/validate`
+   - Method: POST
+   - Description: Validates the mobile number using an external API and returns the country code + name, and operator.
+
+2. Add Item `/api/add`
+   - Method: POST
+   - Description: Adds a new item with name, Description, and optional mobile number(whuch gets validated uses `/validate`).
+
+3. Update Item `/api/update/:id`
+   - Method: PUT
+   - Description: Updates an existing item by ID (if mobile number gets changed/added it gets validated using `/validate`).
+
+4. Delete Item `/api/delete/:id`
+   - Method: DELETE
+   - Description: Deletes an existing item by ID.
+
+5. Get All Items `/api/items`
+   - Method: GET
+   - Description: Retrieves all items from the database.
+
+
+Instructions to run code
+- Install Dependencies: Run `npm install` in the project directory to install required dependencies.
+- Run the React App: navigate to the frontend directory and run `npm start`.
+- Start the Server:navigate back to the mobile-validation-service directory and run `node server.js` to start the backend server
+
+
+Code Efficiency and Improvement Areas
+- Efficient Parts: 
+    The use of asynchronous requests and Promises in both the server and frontend ensures non-blocking operations, enhancing performance.
+- Areas for Improvement:
+  - The mobile number validation could be improved by adding more comprehensive checks before sending the request to the external API.
+  - Frontend Design could have been better
+
